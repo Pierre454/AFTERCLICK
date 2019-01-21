@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Ce html est la base que chaque page doit avoir -->
+
+<html>
+	<head>
+		<title>PT</title>
+        <link rel="stylesheet" href="css/APcss2.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src='build/pdfmake.min.js'></script>
+		<script src='build/vfs_fonts.js'></script>
+		
+		<!-- puissante recherche -->
+		<link rel="stylesheet" href="Recherche/awesomplete.css" />
+		<script src="Recherche/awesomplete.js" async></script>
+	</head>
+
+	<body>
+        <!--<div id="conteneur">
+            <div>-->
+        <header>
+             <div class="game-head">
+                <img src="Images/iutlogo.jpg" alt="logo iut">
+                <p>After'Click<p>
+             </div>
+
+             <div class="btn-play-div">
+                <a href="#" class="btn btn-log">Log out</a>
+             </div>
+        </header>
+        
+        <div id="AP_bouton">
+             <i  class="fa fa-play"></i>
+             <i  class="fa fa-plus" onclick="popUp()"></i>
+             <i  class="fa fa-trash" onclick="askDelQuestion()"></i>
+             <i  class="fa fa-pencil"></i>
+             <i  class="fa fa-external-link" onclick="exporter()"></i>
+             <i  class="fa fa-bar-chart"></i>
+         </div>
+                <!--</div>-->
+       
+       <!-- barre de recherche verticale -->
+        <div id="AP_bouton2">         
+            <div class="recherchediv">
+                <div id="AP_inputRecherche">
+                    <input type="text" id="myinput" class="recherche" placeholder="recherche">
+                    <button type="submit" class="boutonrech">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+               <!-- le tri  -->       
+            <div class="rechercheTrie">    
+                <label>Trier par :</label>
+                <select class="AP_inputb" onclick="action(this.value)"> 
+                    <option>    </option> 
+                    <option>Date</option> 
+                    <option>Matiere</option> 
+                </select>
+            </div>
+        </div>
+        
+            <div id="AP_divquest">
+                <div id="AP_div2quest"></div>
+            </div>  
+            
+            <div id="pagination">
+                 <i id="pag1" class="fa fa-chevron-circle-left" aria-hidden="true" onclick="pagination(1);"></i>
+                 <i id="pag2" class="fa fa-chevron-circle-right" aria-hidden="true" onclick="pagination(2);"></i>
+            </div>
+
+        <footer class="footer">
+            <!--<img id="foot" src="i.jpg" alt="logo iut">-->
+            <p>Realise dans le cadre du projet tutore</p>
+            <p>&copy;2017-2018</p>
+        </footer>
+        
+        <script src="scripts/Script_Questionnaire.js"></script> 
+    <script src="scripts/popup.js"></script>
+	</body>
+</html>
