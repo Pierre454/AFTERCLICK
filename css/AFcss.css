@@ -1,0 +1,612 @@
+ /* Ceci est le Css commun que tous le monde doit avoir */
+
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html{
+    background-color: #505050;
+ }
+
+body{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    left: 5%;
+    right: auto;
+    bottom: 0;
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 1px 1px #FFFFFF;
+}
+
+/*Bandeau------------------------------------------------------*/
+
+header{
+    position: absolute;
+    top: 0;
+    width: 102%;
+    height: 76px;
+    margin-left: -1%;
+    color: white;
+    background-image: url("../Images/triangle2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+    /*box-shadow: 0 2px 4px 0 #010D23;/**/
+}
+
+.game-head{
+    width: 30%;
+    float: left;
+}
+
+.game-head > img, .game-head > p{
+    display: inline-block;
+}
+
+.game-head > p{
+    font-weight:bold;
+}
+
+.game-head > img{
+    width: 10%;
+    border-radius: 2px;
+    margin-right: 2%;
+}
+
+.game-head > p{
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+/* Le div contenant le titre + le logo de l'iut */
+	
+
+header >div:last-child{
+    float: right;	
+}	
+
+header > div> img{
+    width:20%;
+    margin-top: 3.5%;
+    float: left;
+    margin-left: 5%;
+}
+	
+header > div > #log{
+    font-family: sans-serif;
+    background-color: #dddddd;
+    color: black;
+    float: inherit;
+    border: 2px solid;
+    border-radius: 4px;
+    width: 25%;
+    padding: 2%;
+    margin-top: 10%;
+    margin-right: 30%;
+    background: linear-gradient( #FFFFFF, #C0C0C0);
+    text-align: center;
+    text-decoration: none;
+}
+
+#log:hover{
+     color: white;
+     background: #C0C0C0;
+     background: linear-gradient( #C0C0C0, #808080);	
+}
+
+.btn{
+    font-family: sans-serif;
+    color: black;
+    border: 1px solid #010D23;
+    border-radius: 4px;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 1;
+    max-width:7em;
+}
+
+.btn-play-div{
+    text-align: center;
+    width: 15%;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.btn-log{
+    background-color: #00B4CC;
+    color: #FFFFFF;
+    margin-top: 10%;
+    padding: 4%;
+}
+
+.btn:hover{
+    background-color: #010D23;
+    color: #FFFFFF;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+
+.btn-log:hover{
+    background-color: #FFFFFF;
+    color: #00B4CC;
+    border: 1px solid #00B4CC;
+    margin-top: 10%;
+    padding: 4%;
+}
+
+
+/*questionnaire----------------------------------------------*/
+
+
+#AP_divquest{
+    position: absolute;
+    top: 30vh;
+    width: 95%;
+    left: 2.5%;
+    right: auto;
+    height: 60vh;
+    overflow: auto;
+    /*border: 1px solid red;/**/
+}
+
+#AP_div2quest{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#AP_div2quest > div{
+    margin-left: 2%;
+    margin-top: 2%;
+    display: inline-block;
+    width: 20%;
+}
+
+.quest{
+    text-align: center;
+    width: 15%;
+    height: 22vh;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    box-shadow: 0 4px 4px 0 #000000;
+    /*border: 1px solid red;/**/
+}
+
+.quest:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05); 
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);       
+}
+
+.quest > input{
+    border:none;
+    height: 7vh;
+}
+
+.AP_questionnaire, #matiere, #date{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    /*border: 1px solid yellow;/**/
+}
+
+.AP_questionnaire{
+    border: none;
+    height: 15vh;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+/*pagination-------------------------------------------------------*/
+
+#pagination > i{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px; 
+    color:  #00B4CC;
+}
+
+#pag1{
+    margin-right: 80vw;
+}
+
+#pagination
+{
+    position: relative;
+    top: 90vh;
+    text-align: center;
+}
+
+/*Bouton-questionnaire--------------------------------------------*/
+
+#AP_bouton{
+    position: absolute;
+    background-image: url(../Images/bandoDesign.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 11vh;
+    width: 50%;
+    height: 40px;
+    padding: 5px;
+    left: 25%;
+    right: auto;
+    text-align: center;
+    /*border: 1px solid red;/**/
+}
+
+#AP_bouton > i{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width: 15%;
+    font-size: 30px;
+    color: #ffffff;
+    /*border: 1px solid brown;/**/
+}
+
+#AP_bouton > i:hover{
+    transform: scale(1.4, 1.4);
+    -o-transform: scale(1.4, 1.4);
+    -moz-transform: scale(1.4, 1.4);
+    -webkit-transform: scale(1.4, 1.4);
+    transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+#AP_bouton2{
+    position: absolute;
+    top: 12vh;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: auto;
+    height: 80px;
+    padding: 5px;
+}
+
+.AP_inputb{
+    margin-top: 1.5%;
+    border: none;
+    width: 45%;
+    height: 30px;
+    color: #00B4CC;
+    border: 1px solid #00B4CC;
+    border-radius: 4px;
+}
+
+.AP_inputb:focus{
+    outline: none;
+}
+
+/*Recherche---------------------------------------------------*/
+
+#AP_inputRecherche, .rechercheTrie{
+    vertical-align: top;
+    padding: 4px;
+}
+
+#AP_inputRecherche{
+    margin-left: 4%;
+    float: left;
+    width: 30%;
+    height: 30px;
+    display: inline-block;
+}
+
+.rechercheTrie{
+    float: right;
+    width: 25%;
+    height: 2.2em;
+    color: #00B4CC;
+}
+ 
+.recherche{
+    border: 3px solid #00B4CC;
+    height: 35px;
+}
+
+.recherche:focus{
+    color: #00B4CC;
+}
+.boutonrech{
+  float: right;
+  width: 40px;
+  height: 35px;
+  position: absolute; 
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+/*POP_UP-----------------------------------------------------*/
+
+/* Style de la pop-up */
+
+@keyframes downPp
+{
+	from
+	{
+		top: -100%;
+	}
+	to
+	{
+		top: 0%;
+	}
+}
+
+@keyframes upPp
+{
+	from
+	{
+		top: 0%;
+	}
+	to
+	{
+		top: -100%;
+	}
+}
+
+@keyframes colorPpBck
+{
+	from
+	{
+		background-color: rgba(255, 255, 255, 0.0);
+	}
+	to
+	{
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+}
+
+@keyframes uncolorPpBck
+{
+	from
+	{
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	to
+	{
+		background-color: rgba(255, 255, 255, 0.0);
+	}
+}
+
+#popupContainer
+{
+	font-family: sans-serif;
+	position: absolute;
+	top: 0;
+	left: -5.5%;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.2);
+	text-align: center;
+	animation-duration: 0.5s;
+	animation-name: colorPpBck;
+    
+    
+}
+#popup
+{
+	display: inline-block;
+	border-radius: 0 0 0.5em 0.5em;
+	padding: 1em;
+	box-shadow: 0 0 1em #888888;
+	background-color: #ffffff;
+	position: relative;
+	animation-duration: 0.5s;
+	animation-name: downPp;
+    min-width: 20em;
+}
+#popup h3
+{
+	padding: 1em;
+	padding-top: 0.5em;
+}
+#popup button
+{
+	color: #000040;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 1em;
+	width: 50%;
+	border: 2px solid #000040;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: 0.2s;
+}
+#popup #lButt
+{
+	position: relative;
+	left: -1.75em;
+	border-radius: 0 0.5em 0.5em 1em;
+    margin-top: 2em;
+}
+#popup #lButt:before
+{
+	content: " ";
+	background-color: #000030;
+	border-top-left-radius: 1em;
+	display: inline-block;
+	width: 0.75em;
+	height: 1em;
+	float: left;
+	position: relative;
+	left: calc(-1em - 2px);
+	top: calc(-2em - 2px);
+}
+#popup #rButt
+{
+	float: right;
+	position: relative;
+	right: -1.75em;
+	border-radius: 0.5em 0 1em 0.5em;
+    margin-top: 2em;
+}
+#popup #rButt:after
+{
+	content: " ";
+	background-color: #000030;
+	border-top-right-radius: 0.75em;
+	display: inline-block;
+	width: 0.75em;
+	height: 1em;
+	float: right;
+	position: relative;
+	left: calc(1em + 2px);
+	top: calc(-2em - 2px);
+}
+#popup .main
+{
+	background-color: #000040;
+	color: #ffffff;
+}
+
+/*footer-------------------------------------------*/
+
+.footer{
+    position: absolute;
+    width: 102%;
+    left: -1%;
+    bottom: 0;
+    height: 38px;
+    color: #ffffff;
+    text-align: center;
+    background-image: url("../Images/footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*border: 1px solid red;/**/
+}
+
+.footer > img , .footer > p{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    /*border: 1px solid red;/**/
+}
+
+#foot{
+    display: inline-block;
+}
+
+
+/*-------------------Adaptation----------------------*/
+
+@media screen and (min-width: 1024px) {
+    header{
+        height: 100px;
+    }
+    #AP_bouton{
+       top: 87px; 
+    }
+    #AP_bouton2{
+        top: 14vh;
+    }
+    .AP_questionnaire{
+        font-size: 1em;
+    }
+   .AP_inputb{
+        width: 55%;
+    }
+    #AP_bouton > i{
+        font-size: 25px;
+    }
+    .quest > input{
+        border:none;
+        height: 6vh;
+    }
+    #pagination{
+        top: 88vh;
+    }
+   
+}
+
+@media screen and (min-width: 1300px) {
+    #pagination{
+        top: 84vh;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    header{
+        height: 97px;
+    }
+    #AP_bouton{
+        top: 87px;
+    }
+   
+}
+
+@media screen and (min-width: 1920px) {
+    header{
+        height: 100px;
+    }
+    #AP_bouton{
+        top: 100px;
+    }
+    .footer{
+        height: 50px;
+    } 
+    .footer > p{
+        margin-top: 1%;
+    } 
+}
+
+ @media screen and (min-width: 2000px) {
+    header{
+        height: 130px;
+    }
+    #AP_bouton{
+        top: 125px;
+    }
+    .footer{
+        height: 80px;
+    } 
+    .footer > p{
+        margin-top: 1%;
+    } 
+}
+
+ @media screen and (min-width: 2500px) {
+     .AP_inputb{
+        width: 65%;
+        height: 50px;
+    }
+    .recherche{
+        height: 50px;
+        width: 150%;
+    }
+    .boutonrech{
+      left: 17%;
+      width: 40px;
+      height: 50px;
+    }
+     .AP_questionnaire{
+        font-size: 1.8em;
+     }
+     .quest > input{
+         font-size: 1.4em;
+     }
+     #pagination > i{
+        font-size: 50px; 
+     }
+
+}

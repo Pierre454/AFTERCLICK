@@ -223,7 +223,7 @@ focus();
 //-----------------------------------FONCTION POP-UP-------------------------------
 
 function popUp(){
-   appendPopup2('<h3>Entrez un nom</h3><input id="AP_nomQ" type="text" placeholder="Nom"/><br/><h3>Entrez une matiere</h3><input id="AP_mat" type="text" placeholder="Matiere"/><br/>', ajout); 
+   appendPopup2('<h3>Entrez un nom</h3><input id="AP_nomQ" type="text" placeholder="Nom"/><br/><h3>Entrez une matière</h3><input id="AP_mat" type="text" placeholder="Matiere"/><br/>', ajout); 
  }
             
 function hidePopup(){
@@ -244,7 +244,7 @@ function ajout(){
   var matiere = document.getElementById('AP_mat').value;
   for(let i in allquestionnaires){
     if(allquestionnaires[i]['nom']==nom){
-      appendPopup2('<h3>Entrez un nom</h3> <p> Ce questionnaire existe deja </p><input id="AP_mat" type="text" placeholder="Matiere"/><br/>', ajout);
+      appendPopup2('<h3>Entrez un nom</h3> <p> Ce questionnaire existe déjà </p><input id="AP_mat" type="text" placeholder="Matiere"/><br/>', ajout);
       return;
 
     }
@@ -377,7 +377,7 @@ function closePopup()
 
 function askDelQuestion()
 {
-    appendPopup2('Etes-vous sur de vouloir supprimer le questionnaire : ' + focusE + ' ?', supprimer);
+    appendPopup2('Êtes-vous sûr de vouloir supprimer le questionnaire : ' + focusE + ' ?', supprimer);
 	
 }
 
@@ -405,7 +405,7 @@ function action(value)
 {
     if(value == 'Date')
         tridate();
-    else if(value == 'Matiere')
+    else if(value == 'Matière')
         trimatiere();
 }
 
