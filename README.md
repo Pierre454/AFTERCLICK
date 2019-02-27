@@ -7,7 +7,7 @@ During interactive or other courses, it is common to use remote controls called 
  - selection
  - addition
  - deletion
- - spell
+ - sorting
  - pagination
  
  # Mention
