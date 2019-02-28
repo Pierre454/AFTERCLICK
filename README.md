@@ -16,5 +16,5 @@ During interactive or other courses, it is common to use remote controls called 
  - CSS
  - JS
  
- ## Acknowledgments
+ ## Acknowledgment
  This project was realized as part of the tutored projects of my DUT informatique.
